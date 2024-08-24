@@ -163,4 +163,4 @@ cython_debug/
 
 log/*
 
-sql_app/static/imgs
+sql_app/static/imgs/*
