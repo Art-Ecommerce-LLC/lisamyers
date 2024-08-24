@@ -83,7 +83,7 @@ class ErrorLogger(logging.Handler):
             pass
 # Function to setup the logger with the NocoDB connection
 def setup_logger() -> logging.Logger:
-    logger = logging.getLogger("brig_api")
+    logger = logging.getLogger("levi_api")
     logger.setLevel(logging.INFO)
 
     # Log to a file, with rotation
