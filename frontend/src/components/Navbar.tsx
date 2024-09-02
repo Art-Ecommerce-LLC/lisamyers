@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
     return (
         <nav className="flex items-center justify-between bg-white p-4 shadow relative z-20">
             <div className="flex items-center z-30">
-                <Image src={image} alt="Logo" width={170} height={170} />
+                <Image src={image} alt="Logo" width={190} height={190} />
             </div>
 
             <div className="hidden md:flex items-center space-x-4 md:space-x-8 mr-8">
