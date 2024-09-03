@@ -1,37 +1,33 @@
-import Image from "next/image";
 import { Button } from "@headlessui/react";
-import yogaImage from "../assets/landingimage.jpg";
 
-export default function Home() {
+export default function About() {
   return (
     <div className="w-full h-full flex items-center justify-center">
       <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-8xl p-8 md:p-16 lg:space-x-16">
         {/* Left Section */}
         <div className="flex flex-col justify-center w-full lg:w-1/2 xl:w-2/5 space-y-6 text-center lg:text-left">
           <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-gray-800 leading-tight">
-            Find Your Inner Peace with Yoga Therapy
+            About Our Yoga Practice
           </h1>
           <p className="text-lg md:text-xl xl:text-2xl text-gray-600">
-            Transform your life through personalized yoga sessions designed to heal and rejuvenate your body, mind, and spirit.
+            Our mission is to help individuals find their inner peace through holistic yoga therapy. Our sessions are tailored to meet the unique needs of every client.
           </p>
           <Button
             as="a"
-            href="mailto:lisaxmyers@gmail.com?subject=Book%20a%20Yoga%20Session&body=I%20would%20like%20to%20book%20a%20yoga%20session."
+            href="/contact"
             className="bg-blue-500 text-white px-6 py-3 rounded-md text-lg text-center hover:bg-blue-600"
           >
-            Book a Session
+            Contact Us
           </Button>
         </div>
 
         {/* Right Section */}
         <div className="mt-8 lg:mt-0 w-full lg:w-1/2 xl:w-3/5 flex justify-center">
           <div className="w-full">
-            <Image
-              src={yogaImage}
-              alt="Yoga Therapy"
-              className="rounded-[50px_0_0_150px] shadow-lg w-full h-auto"
-
-            />
+            {/* Replace this div with an Image component or any other content */}
+            <div className="rounded-[50px_0_0_150px] shadow-lg w-full h-auto bg-gray-200 flex items-center justify-center">
+              <span className="text-gray-500 text-lg">About Us Image</span>
+            </div>
           </div>
         </div>
       </div>

@@ -10,14 +10,37 @@ const Navbar: React.FC = () => {
     return (
         <nav className="flex items-center justify-between bg-white p-4 shadow relative z-20">
             <div className="flex items-center z-30">
-                <Image src={image} alt="Logo" width={190} height={190} />
+                <a href="/">
+                    <Image src={image} alt="Logo" width={190} height={190} />
+                </a>
             </div>
-
-            <div className="hidden md:flex items-center space-x-4 md:space-x-8 mr-8">
-                <a href="#" className="text-gray-800">Home</a>
-                <a href="#" className="text-gray-800">About</a>
-                <a href="#" className="text-gray-800">Services</a>
-                <a href="#" className="text-gray-800">Contact</a>
+            
+           {/* Desktop Menu */}
+           <div className="hidden md:flex items-center space-x-4 md:space-x-8 mr-8">
+                <a
+                    href="/"
+                    className="text-gray-800 hover:bg-[var(--hover-bg-color)] hover:text-[var(--hover-text-color)] transition-colors duration-300 ease-in-out px-4 py-2 rounded-md"
+                >
+                    Home
+                </a>
+                <a
+                    href="/about"
+                    className="text-gray-800 hover:bg-[var(--hover-bg-color)] hover:text-[var(--hover-text-color)] transition-colors duration-300 ease-in-out px-4 py-2 rounded-md"
+                >
+                    About
+                </a>
+                <a
+                    href="/services"
+                    className="text-gray-800 hover:bg-[var(--hover-bg-color)] hover:text-[var(--hover-text-color)] transition-colors duration-300 ease-in-out px-4 py-2 rounded-md"
+                >
+                    Services
+                </a>
+                <a
+                    href="/contact"
+                    className="text-gray-800 hover:bg-[var(--hover-bg-color)] hover:text-[var(--hover-text-color)] transition-colors duration-300 ease-in-out px-4 py-2 rounded-md"
+                >
+                    Contact
+                </a>
             </div>
 
             <div className="md:hidden flex items-center z-30">
@@ -46,12 +69,32 @@ const Navbar: React.FC = () => {
             </div>
 
             {isMobileMenuOpen && (
-                <div className="fixed inset-0 bg-white p-4 flex flex-col items-center justify-center space-y-8 z-20 md:hidden">
-                    <a href="#" className="text-gray-800 text-xl w-full text-center py-2">Home</a>
-                    <a href="#" className="text-gray-800 text-xl w-full text-center py-2">About</a>
-                    <a href="#" className="text-gray-800 text-xl w-full text-center py-2">Services</a>
-                    <a href="#" className="text-gray-800 text-xl w-full text-center py-2">Contact</a>
-                </div>
+                 <div className="fixed inset-0 bg-white p-4 flex flex-col items-center justify-center space-y-8 z-20 md:hidden">
+                 <a
+                     href="/"
+                     className="text-gray-800 text-xl w-full text-center py-4 hover:bg-[var(--hover-bg-color)] hover:text-[var(--hover-text-color)] transition-colors duration-300 ease-in-out rounded-lg"
+                 >
+                     Home
+                 </a>
+                 <a
+                     href="/about"
+                     className="text-gray-800 text-xl w-full text-center py-4 hover:bg-[var(--hover-bg-color)] hover:text-[var(--hover-text-color)] transition-colors duration-300 ease-in-out rounded-lg"
+                 >
+                     About
+                 </a>
+                 <a
+                     href="/services"
+                     className="text-gray-800 text-xl w-full text-center py-4 hover:bg-[var(--hover-bg-color)] hover:text-[var(--hover-text-color)] transition-colors duration-300 ease-in-out rounded-lg"
+                 >
+                     Services
+                 </a>
+                 <a
+                     href="/contact"
+                     className="text-gray-800 text-xl w-full text-center py-4 hover:bg-[var(--hover-bg-color)] hover:text-[var(--hover-text-color)] transition-colors duration-300 ease-in-out rounded-lg"
+                 >
+                     Contact
+                 </a>
+             </div>
             )}
         </nav>
     );
