@@ -20,7 +20,7 @@ export default function Contact() {
           <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-gray-800 leading-tight">
             Get in Touch
           </h1>
-          <p className="text-lg md:text-xl xl:text-2xl text-gray-600">
+          <p className="text-lg text-left md:text-xl xl:text-2xl text-gray-600">
             We'd love to hear from you. Whether you have a question about our services or want to schedule a session, our team is here to help.
           </p>
           <Button
