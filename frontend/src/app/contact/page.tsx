@@ -1,11 +1,37 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { Button } from "@headlessui/react";
+import Image from "next/image";
+import contactImage from "../../assets/yogacontact.jpg";
 
 export default function Contact() {
   return (
     <div className="w-full h-full flex items-center justify-center">
       <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-8xl p-8 md:p-16 lg:space-x-16">
-        {/* Left Section */}
-        <div className="flex flex-col justify-center w-full lg:w-1/2 xl:w-2/5 space-y-6 text-center lg:text-left">
+        {/* Left Section (Image) */}
+        <motion.div
+          className="mt-8 lg:mt-0 w-full lg:w-1/2 xl:w-3/5 flex justify-center"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <div className="w-full">
+            <Image
+              src={contactImage}
+              alt="Contact Us"
+              className="rounded-[100px_20px_50px_20px] lg:rounded-[150px_20px_100px_20px] shadow-lg w-full h-auto"
+            />
+          </div>
+        </motion.div>
+
+        {/* Right Section (Text) */}
+        <motion.div
+          className="flex flex-col justify-center w-full lg:w-1/2 xl:w-2/5 space-y-6 text-center lg:text-left"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-gray-800 leading-tight">
             Get in Touch
           </h1>
@@ -15,21 +41,11 @@ export default function Contact() {
           <Button
             as="a"
             href="mailto:lisaxmyers@gmail.com?subject=Inquiry%20about%20Yoga%20Therapy"
-            className="bg-blue-500 text-white px-6 py-3 rounded-md text-lg text-center hover:bg-blue-600"
+            className="Button"
           >
             Email Us
           </Button>
-        </div>
-
-        {/* Right Section */}
-        <div className="mt-8 lg:mt-0 w-full lg:w-1/2 xl:w-3/5 flex justify-center">
-          <div className="w-full">
-            {/* Replace this div with an Image component or any other content */}
-            <div className="rounded-[50px_0_0_150px] shadow-lg w-full h-auto bg-gray-200 flex items-center justify-center">
-              <span className="text-gray-500 text-lg">Contact Us Image</span>
-            </div>
-          </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
