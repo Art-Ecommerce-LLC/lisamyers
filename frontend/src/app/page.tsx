@@ -72,7 +72,7 @@ export default function Home() {
               src={yogaImage}
               alt="Yoga Therapy"
               className="rounded-[100px_20px_50px_20px] lg:rounded-[150px_20px_100px_20px] shadow-lg w-full h-auto"
-              quality={10}
+              quality={1}
               onLoadingComplete={() => setIsImageLoaded(true)}
             />
           </div>

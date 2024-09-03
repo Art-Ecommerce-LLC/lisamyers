@@ -86,44 +86,12 @@ export default function About() {
                 src={yogaImage4}
                 alt="Yoga Session"
                 className="w-full h-full object-cover"
-                quality={10}
+                quality={1}
               />
             </div>
           </motion.div>
         </motion.section>
 
-        {/* Section 1 - Introduction */}
-        <motion.section
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          className="flex flex-col lg:flex-row items-stretch lg:space-x-12 space-y-8 lg:space-y-0"
-        >
-          <motion.div 
-            className="lg:w-1/2 flex justify-center order-last lg:order-first" 
-            variants={fadeInUp}
-          >
-            <div className="w-full relative shadow-lg overflow-hidden rounded-[20px_150px_20px_100px] lg:rounded-[20px_150px_20px_100px] aspect-w-4 aspect-h-3">
-              <Image
-                src={yogaImage1}
-                alt="Yoga Practice"
-                className="w-full h-full object-cover"
-                quality={10}
-              />
-            </div>
-          </motion.div>
-          <motion.div 
-            className="lg:w-1/2 flex flex-col justify-center text-left space-y-6 px-4 md:px-0 pb-10" 
-            variants={fadeInUp}
-          >
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
-              Discover Your Inner Bliss
-            </h1>
-            <p className="text-lg md:text-xl text-gray-600">
-              Lisa will guide you on a journey to uncover the powerful source within you—a beacon of strength, courage, and wisdom. Through our holistic yoga therapy, you’ll unlock abundant strength and resilience.
-            </p>
-          </motion.div>
-        </motion.section>
 
         {/* Section 2 - The Path to Bliss */}
         <motion.section
@@ -160,49 +128,13 @@ export default function About() {
                 src={yogaImage2}
                 alt="Meditation or Healing"
                 className="w-full h-full object-cover"
-                quality={10}
+                quality={1}
               />
             </div>
           </motion.div>
         </motion.section>
 
-        {/* Section 3 - Personal Journey with Lisa */}
-        <motion.section
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          className="flex flex-col lg:flex-row items-stretch lg:space-x-12 space-y-8 lg:space-y-0"
-        >
-          <motion.div 
-            className="lg:w-1/2 flex justify-center order-last lg:order-first" 
-            variants={fadeInUp}
-          >
-            <div className="w-full relative shadow-lg overflow-hidden rounded-[20px_150px_20px_100px] lg:rounded-[20px_150px_20px_100px] aspect-w-4 aspect-h-3">
-              <Image
-                src={yogaImage3}
-                alt="Lisa"
-                className="w-full h-full object-cover"
-                quality={10}
-              />
-            </div>
-          </motion.div>
-          <motion.div 
-            className="lg:w-1/2 flex flex-col justify-center text-left space-y-6 px-4 md:px-0 pb-10" 
-            variants={fadeInUp}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
-              Journey into the Self with Lisa
-            </h2>
-            <p className="text-lg md:text-xl text-gray-600">
-              Lisa’s journey emphasizes the importance of cultivating a deep sense of self. When we embody our bliss, we naturally radiate positivity and love. Ready to embark on this journey? Lisa will guide you along the way.
-            </p>
-            <div className="mt-4 md:mt-8"> 
-              <Button as="a" href="/contact" className="Button mb-4">
-                Contact Me
-              </Button>
-            </div>
-          </motion.div>
-        </motion.section>
+
       </div>
     </div>
   );
