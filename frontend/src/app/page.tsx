@@ -55,7 +55,7 @@ export default function Home() {
           About Me
         </h2>
         <h3 className="text-2xl md:text-3xl xl:text-4xl font-semibold text-gray-700 text-center mb-8">
-          Lisa Myers - C-IAYT Certified Yoga Therapist, E-RYT 500
+          C-IAYT Certified Yoga Therapist, E-RYT 500
         </h3>
         <div className="max-w-4xl mx-auto text-left">
           <p className="text-lg md:text-xl xl:text-2xl text-gray-600 mt-4">

@@ -17,7 +17,7 @@ export default function Services() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-gray-800 leading-tight">
-            Yoga Therapy Services
+            Services Offered
           </h1>
           <Button
             as="a"
