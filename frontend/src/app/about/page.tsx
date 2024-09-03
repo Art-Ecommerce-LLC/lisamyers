@@ -54,6 +54,8 @@ export default function About() {
                 alt="Yoga Session"
                 className="w-full h-full object-cover"
                 quality={15}
+                blurDataURL="data:..."
+                placeholder="blur"
               />
             </div>
           </motion.div>

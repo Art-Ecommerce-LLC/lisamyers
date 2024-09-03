@@ -45,6 +45,8 @@ export default function Contact() {
               className="rounded-[100px_20px_50px_20px] lg:rounded-[150px_20px_100px_20px] shadow-lg w-full h-auto"
               priority={true}
               quality={15}
+              blurDataURL="data:..."
+              placeholder="blur"
             />
           </div>
         </motion.div>

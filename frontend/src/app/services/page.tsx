@@ -46,6 +46,8 @@ export default function Services() {
                   className="object-cover w-full h-full"
                   priority={true}
                   quality={15}
+                  blurDataURL="data:..."
+                  placeholder="blur"
                 />
               </div>
             </div>
@@ -75,6 +77,8 @@ export default function Services() {
                   className="object-cover w-full h-full"
                   priority={true}
                   quality={15}
+                  blurDataURL="data:..."
+                  placeholder="blur"
                 />
               </div>
             </div>
