@@ -49,7 +49,7 @@ export default function Services() {
                   src={lisapose1}
                   alt="Private Yoga Therapy Sessions"
                   className="object-cover w-full h-full"
-                  quality={70}
+                  quality={30}
                 />
               </div>
             </div>
@@ -77,7 +77,7 @@ export default function Services() {
                   src={neuro}
                   alt="NeuroOptimal® Brain Training Feedback"
                   className="object-cover w-full h-full"
-                  quality={70}
+                  quality={30}
                 />
               </div>
             </div>

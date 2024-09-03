@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@headlessui/react";
-import yogaImage from "../assets/landingimage.jpg";
+import yogaImage from "../assets/bliss/lisapose6.jpeg";
 
 export default function Home() {
   return (
@@ -29,7 +29,7 @@ export default function Home() {
             href="mailto:lisaxmyers@gmail.com?subject=Book%20a%20Yoga%20Session&body=I%20would%20like%20to%20book%20a%20yoga%20session."
             className="Button"
           >
-            Book a Session
+            Contact Me
           </Button>
         </motion.div>
 
@@ -45,7 +45,7 @@ export default function Home() {
               src={yogaImage}
               alt="Yoga Therapy"
               className="rounded-[100px_20px_50px_20px] lg:rounded-[150px_20px_100px_20px] shadow-lg w-full h-auto"
-              quality={70}
+              quality={30}
             />
           </div>
         </motion.div>

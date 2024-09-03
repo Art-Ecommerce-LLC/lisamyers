@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { Button } from "@headlessui/react";
 import { motion } from "framer-motion";
-import yogaImage1 from "../../assets/balance.jpg";
-import yogaImage2 from "../../assets/yogapose.jpg";
+import yogaImage1 from "../../assets/bliss/lisapose4.jpeg";
+import yogaImage2 from "../../assets/bliss/lisapose3.jpeg";
 import yogaImage3 from "../../assets/bliss/lisapose1.jpeg";
 import yogaImage4 from "../../assets/bliss/lisapose2.jpeg";
 
@@ -18,7 +18,54 @@ export default function About() {
     <div className="flex flex-col items-center w-full min-h-screen p-4 md:p-16 bg-white">
       {/* Main Container */}
       <div className="w-full max-w-7xl space-y-16 md:space-y-24">
-        
+        {/* Section 4 - Private Yoga Therapy Sessions */}
+        <motion.section
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="flex flex-col-reverse lg:flex-row items-stretch lg:space-x-12 space-y-8 lg:space-y-0"
+        >
+          <motion.div 
+            className="lg:w-1/2 flex flex-col justify-center text-center lg:text-left space-y-6 px-4 md:px-0" 
+            variants={fadeInUp}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
+              Private Yoga Healing Sessions
+            </h2>
+            <p className="text-lg md:text-xl text-gray-600">
+              Experience personalized healing through Private Yoga Healing Sessions. Tailored to meet your individual needs, these sessions offer a holistic approach to healing, whether for physical discomfort, emotional challenges, or deeper self-connection.
+            </p>
+            <p className="text-lg md:text-xl text-gray-600">
+              <strong>What to Expect:</strong> Your session will be uniquely tailored and may include:
+            </p>
+            <ul className="list-disc list-inside space-y-4 text-left text-lg md:text-xl text-gray-600">
+              <li>Movement: Gentle or dynamic yoga postures.</li>
+              <li>Meditation: Techniques to cultivate mindfulness.</li>
+              <li>Sound Healing: Harmonizing your body and mind through sound.</li>
+              <li>Reiki: Energy healing to restore balance.</li>
+              <li>Breathwork: Controlled breathing exercises for vitality.</li>
+              <li>Compassionate Listening: A safe space for expression.</li>
+            </ul>
+            <div className="mt-4 md:mt-8"> {/* Added mb-4 for mobile margin */}
+              <Button as="a" href="/contact" className="Button mb-4">
+                Schedule a Session
+              </Button>
+            </div>
+          </motion.div>
+          <motion.div 
+            className="lg:w-1/2 flex justify-center order-first lg:order-last" 
+            variants={fadeInUp}
+          >
+            <div className="w-full relative shadow-lg overflow-hidden rounded-[20px_100px_20px_150px] lg:rounded-[150px_20px_100px_20px] aspect-w-4 aspect-h-3">
+              <Image
+                src={yogaImage4}
+                alt="Yoga Session"
+                className="w-full h-full object-cover"
+                quality={70}
+              />
+            </div>
+          </motion.div>
+        </motion.section>
         {/* Section 1 - Introduction */}
         <motion.section
           initial="hidden"
@@ -35,7 +82,7 @@ export default function About() {
                 src={yogaImage1}
                 alt="Yoga Practice"
                 className="w-full h-full object-cover"
-                quality={70}
+                quality={30}
               />
             </div>
           </motion.div>
@@ -47,7 +94,7 @@ export default function About() {
               Discover Your Inner Bliss
             </h1>
             <p className="text-lg md:text-xl text-gray-600">
-              We guide you on a journey to uncover the powerful source within you—a beacon of strength, courage, and wisdom. Through our holistic yoga therapy, you’ll unlock abundant strength and resilience.
+              Lisa will guide you on a journey to uncover the powerful source within you—a beacon of strength, courage, and wisdom. Through our holistic yoga therapy, you’ll unlock abundant strength and resilience.
             </p>
             <div className="mt-4 md:mt-8 mb-4"> {/* Added mb-4 for mobile margin */}
               <Button as="a" href="/contact" className="Button mb-4">
@@ -97,7 +144,7 @@ export default function About() {
                 src={yogaImage2}
                 alt="Meditation or Healing"
                 className="w-full h-full object-cover"
-                quality={70}
+                quality={30}
               />
             </div>
           </motion.div>
@@ -119,7 +166,7 @@ export default function About() {
                 src={yogaImage3}
                 alt="Lisa"
                 className="w-full h-full object-cover"
-                quality={70}
+                quality={30}
               />
             </div>
           </motion.div>
@@ -141,54 +188,7 @@ export default function About() {
           </motion.div>
         </motion.section>
 
-        {/* Section 4 - Private Yoga Therapy Sessions */}
-        <motion.section
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          className="flex flex-col-reverse lg:flex-row items-stretch lg:space-x-12 space-y-8 lg:space-y-0"
-        >
-          <motion.div 
-            className="lg:w-1/2 flex flex-col justify-center text-center lg:text-left space-y-6 px-4 md:px-0" 
-            variants={fadeInUp}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
-              Private Yoga Therapy Sessions
-            </h2>
-            <p className="text-lg md:text-xl text-gray-600">
-              Experience personalized healing through Private Yoga Therapy Sessions. Tailored to meet your individual needs, these sessions offer a holistic approach to healing, whether for physical discomfort, emotional challenges, or deeper self-connection.
-            </p>
-            <p className="text-lg md:text-xl text-gray-600">
-              <strong>What to Expect:</strong> Your session will be uniquely tailored and may include:
-            </p>
-            <ul className="list-disc list-inside space-y-4 text-left text-lg md:text-xl text-gray-600">
-              <li>Movement: Gentle or dynamic yoga postures.</li>
-              <li>Meditation: Techniques to cultivate mindfulness.</li>
-              <li>Sound Healing: Harmonizing your body and mind through sound.</li>
-              <li>Reiki: Energy healing to restore balance.</li>
-              <li>Breathwork: Controlled breathing exercises for vitality.</li>
-              <li>Compassionate Listening: A safe space for expression.</li>
-            </ul>
-            <div className="mt-4 md:mt-8"> {/* Added mb-4 for mobile margin */}
-              <Button as="a" href="/contact" className="Button mb-4">
-                Schedule a Session
-              </Button>
-            </div>
-          </motion.div>
-          <motion.div 
-            className="lg:w-1/2 flex justify-center order-first lg:order-last" 
-            variants={fadeInUp}
-          >
-            <div className="w-full relative shadow-lg overflow-hidden rounded-[20px_100px_20px_150px] lg:rounded-[150px_20px_100px_20px] aspect-w-4 aspect-h-3">
-              <Image
-                src={yogaImage4}
-                alt="Yoga Session"
-                className="w-full h-full object-cover"
-                quality={70}
-              />
-            </div>
-          </motion.div>
-        </motion.section>
+      
       </div>
     </div>
   );
