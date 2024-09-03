@@ -42,11 +42,11 @@ export default function Contact() {
             <Image
               src={contactImage}
               alt="Contact Us"
-              className="rounded-[100px_20px_50px_20px] lg:rounded-[150px_20px_100px_20px] shadow-lg"
+              className="rounded-[100px_20px_50px_20px] lg:rounded-[150px_20px_100px_20px] shadow-lg h-full w-full"
               priority={true}
               blurDataURL="data:..."
               placeholder="blur"
-              height={900}
+              height={600}
             />
           </div>
         </motion.div>

@@ -47,7 +47,7 @@ export default function Home() {
               priority = {true}
               blurDataURL="data:..."
               placeholder="blur"
-              height={900}
+              height={700}
               
             />
           </div>
