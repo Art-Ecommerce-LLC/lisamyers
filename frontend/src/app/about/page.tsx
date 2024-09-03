@@ -1,12 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Image from "next/image";
-import { Button } from "@headlessui/react";
 import { motion } from "framer-motion";
-import yogaImage1 from "../../assets/bliss/lisapose4.jpeg";
 import yogaImage2 from "../../assets/bliss/lisapose3.jpeg";
-import yogaImage3 from "../../assets/bliss/lisapose1.jpeg";
 import yogaImage4 from "../../assets/bliss/lisapose2.jpeg";
 
 const fadeInUp = {
@@ -15,40 +11,10 @@ const fadeInUp = {
 };
 
 export default function About() {
-  const [isPageLoaded, setIsPageLoaded] = useState(false);
-  const [imagesLoaded, setImagesLoaded] = useState(0);
-
-  // Preload all images
-  useEffect(() => {
-    const images = [yogaImage1, yogaImage2, yogaImage3, yogaImage4];
-    images.forEach((image) => {
-      const img = new window.Image();
-      img.src = image.src;
-      img.onload = () => setImagesLoaded((prev) => prev + 1);
-    });
-  }, []);
-
-  // Set page loaded once all images are fully loaded
-  useEffect(() => {
-    if (imagesLoaded === 4) {
-      setIsPageLoaded(true);
-    }
-  }, [imagesLoaded]);
-
-  // Display a loading screen until the page is fully loaded
-  if (!isPageLoaded) {
-    return (
-      <div className="w-full h-screen flex items-center justify-center">
-        <p>Loading...</p>
-      </div>
-    );
-  }
 
   return (
     <div className="flex flex-col items-center w-full min-h-screen p-4 md:p-16 bg-white">
-      {/* Main Container */}
       <div className="w-full max-w-7xl space-y-16 md:space-y-24">
-        {/* Section 4 - Private Yoga Therapy Sessions */}
         <motion.section
           initial="hidden"
           whileInView="visible"
@@ -84,16 +50,14 @@ export default function About() {
             <div className="w-full relative shadow-lg overflow-hidden rounded-[20px_100px_20px_150px] lg:rounded-[150px_20px_100px_20px] aspect-w-4 aspect-h-3">
               <Image
                 src={yogaImage4}
+                priority
                 alt="Yoga Session"
                 className="w-full h-full object-cover"
-                quality={1}
               />
             </div>
           </motion.div>
         </motion.section>
 
-
-        {/* Section 2 - The Path to Bliss */}
         <motion.section
           initial="hidden"
           whileInView="visible"
@@ -126,15 +90,13 @@ export default function About() {
             <div className="w-full relative shadow-lg overflow-hidden rounded-[20px_100px_20px_150px] lg:rounded-[150px_20px_100px_20px] aspect-w-4 aspect-h-3">
               <Image
                 src={yogaImage2}
+                priority
                 alt="Meditation or Healing"
                 className="w-full h-full object-cover"
-                quality={1}
               />
             </div>
           </motion.div>
         </motion.section>
-
-
       </div>
     </div>
   );

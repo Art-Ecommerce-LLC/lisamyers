@@ -1,6 +1,5 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@headlessui/react";
@@ -8,39 +7,6 @@ import lisapose1 from "../../assets/bliss/lisapose7.jpeg";
 import neuro from "../../assets/neuro.jpg";
 
 export default function Services() {
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
-  const [isPageLoaded, setIsPageLoaded] = useState(false);
-
-  useEffect(() => {
-    const img1 = new window.Image();
-    const img2 = new window.Image();
-    img1.src = lisapose1.src;
-    img2.src = neuro.src;
-
-    const checkImagesLoaded = () => {
-      if (img1.complete && img2.complete) {
-        setIsImageLoaded(true);
-      }
-    };
-
-    img1.onload = checkImagesLoaded;
-    img2.onload = checkImagesLoaded;
-  }, []);
-
-  useEffect(() => {
-    if (isImageLoaded) {
-      setIsPageLoaded(true);
-    }
-  }, [isImageLoaded]);
-
-  if (!isPageLoaded) {
-    return (
-      <div className="w-full h-screen flex items-center justify-center">
-        <p>Loading...</p>
-      </div>
-    );
-  }
-
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-gray-50">
       <div className="flex flex-col items-center justify-between w-full max-w-7xl p-8 md:p-16 space-y-16">
@@ -78,8 +44,7 @@ export default function Services() {
                   src={lisapose1}
                   alt="Private Yoga Therapy Sessions"
                   className="object-cover w-full h-full"
-                  quality={1}
-                  onLoadingComplete={() => setIsImageLoaded(true)}
+                  priority
                 />
               </div>
             </div>
@@ -105,17 +70,16 @@ export default function Services() {
               <div className="rounded-[50px_20px_20px_100px] overflow-hidden h-48 lg:h-full w-full">
                 <Image
                   src={neuro}
-                  alt="NeuroOptimal® Brain Training Feedback"
+                  alt="NeuroOptimal® Brain Training Neurofeedback"
                   className="object-cover w-full h-full"
-                  quality={1}
-                  onLoadingComplete={() => setIsImageLoaded(true)}
+                  priority
                 />
               </div>
             </div>
             <div className="w-full lg:w-1/2 flex flex-col justify-between mt-4 lg:mt-0 lg:ml-6">
-              <h3 className="text-2xl font-bold text-gray-800">NeuroOptimal® Brain Training Feedback</h3>
+              <h3 className="text-2xl font-bold text-gray-800">NeuroOptimal® Brain Training Neurofeedback</h3>
               <p className="text-gray-600 mt-2">
-                Discover the benefits of NeuroOptimal® Brain Training Feedback, a cutting-edge neurotechnology designed to help optimize your brain function. This non-invasive system can help you achieve your goals.
+                Discover the benefits of NeuroOptimal® Brain Training Neurofeedback, a cutting-edge neurotechnology designed to help optimize your brain function. This non-invasive system can help you achieve your goals.
               </p>
             </div>
           </motion.div>
