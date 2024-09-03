@@ -19,7 +19,7 @@ export default function Home() {
           <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-gray-800 leading-tight">
             Find Your Inner Peace
           </h1>
-          <p className="text-lg md:text-xl xl:text-2xl text-gray-600">
+          <p className="text-lg text-left md:text-xl xl:text-2xl text-gray-600">
             Experience holistic healing through Yoga Therapy, a practice that
             integrates traditional therapies and treatments with the wisdom of
             yoga, promoting lasting, transformative healing.
