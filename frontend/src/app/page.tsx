@@ -45,9 +45,10 @@ export default function Home() {
               alt="Yoga Therapy"
               className="rounded-[100px_20px_50px_20px] lg:rounded-[150px_20px_100px_20px] shadow-lg w-full h-auto"
               priority = {true}
-              quality={15}
               blurDataURL="data:..."
               placeholder="blur"
+              height={900}
+              
             />
           </div>
         </motion.div>

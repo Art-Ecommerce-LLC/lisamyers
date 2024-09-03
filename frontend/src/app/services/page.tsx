@@ -45,7 +45,7 @@ export default function Services() {
                   alt="Private Yoga Therapy Sessions"
                   className="object-cover w-full h-full"
                   priority={true}
-                  quality={15}
+                  height={300}
                   blurDataURL="data:..."
                   placeholder="blur"
                 />
@@ -76,9 +76,9 @@ export default function Services() {
                   alt="NeuroOptimal® Brain Training Neurofeedback"
                   className="object-cover w-full h-full"
                   priority={true}
-                  quality={15}
                   blurDataURL="data:..."
                   placeholder="blur"
+                  height={300}
                 />
               </div>
             </div>

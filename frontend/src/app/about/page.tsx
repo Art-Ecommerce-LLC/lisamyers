@@ -53,7 +53,7 @@ export default function About() {
                 priority={true}
                 alt="Yoga Session"
                 className="w-full h-full object-cover"
-                quality={15}
+                height={900}
                 blurDataURL="data:..."
                 placeholder="blur"
               />
@@ -96,7 +96,9 @@ export default function About() {
                 priority={true}
                 alt="Meditation or Healing"
                 className="w-full h-full object-cover"
-                quality={15}
+                height = {900}
+                blurDataURL="data:..."
+                placeholder="blur"
               />
             </div>
           </motion.div>
