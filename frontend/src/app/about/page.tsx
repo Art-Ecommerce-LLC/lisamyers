@@ -35,6 +35,7 @@ export default function About() {
                 src={yogaImage1}
                 alt="Yoga Practice"
                 className="w-full h-full object-cover"
+                quality={70}
               />
             </div>
           </motion.div>
@@ -96,6 +97,7 @@ export default function About() {
                 src={yogaImage2}
                 alt="Meditation or Healing"
                 className="w-full h-full object-cover"
+                quality={70}
               />
             </div>
           </motion.div>
@@ -117,6 +119,7 @@ export default function About() {
                 src={yogaImage3}
                 alt="Lisa"
                 className="w-full h-full object-cover"
+                quality={70}
               />
             </div>
           </motion.div>
@@ -181,6 +184,7 @@ export default function About() {
                 src={yogaImage4}
                 alt="Yoga Session"
                 className="w-full h-full object-cover"
+                quality={70}
               />
             </div>
           </motion.div>
