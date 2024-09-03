@@ -1,36 +1,68 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Button } from "@headlessui/react";
 import Image from "next/image";
+import { Button } from "@headlessui/react";
 
 // Sample image imports (replace with your actual images)
 import lisapose1 from "../../assets/bliss/lisapose7.jpeg";
 import neuro from "../../assets/neuro.jpg";
 
 export default function Services() {
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+  const [isPageLoaded, setIsPageLoaded] = useState(false);
+
+  useEffect(() => {
+    const img1 = new window.Image();
+    const img2 = new window.Image();
+    img1.src = lisapose1.src;
+    img2.src = neuro.src;
+
+    const checkImagesLoaded = () => {
+      if (img1.complete && img2.complete) {
+        setIsImageLoaded(true);
+      }
+    };
+
+    img1.onload = checkImagesLoaded;
+    img2.onload = checkImagesLoaded;
+  }, []);
+
+  useEffect(() => {
+    if (isImageLoaded) {
+      setIsPageLoaded(true);
+    }
+  }, [isImageLoaded]);
+
+  if (!isPageLoaded) {
+    return (
+      <div className="w-full h-screen flex items-center justify-center">
+        <p>Loading...</p>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-gray-50">
       <div className="flex flex-col items-center justify-between w-full max-w-7xl p-8 md:p-16 space-y-16">
         {/* Left Section */}
         <motion.div
-          className="flex flex-col justify-center w-full space-y-6 text-center lg:text-left lg:max-w-4xl"
+          className="flex flex-col justify-center w-2/3 space-y-6 text-center lg:text-left lg:max-w-4xl"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-gray-800 leading-tight">
-            Our Yoga Therapy Services
+            Yoga Therapy Services
           </h1>
-          <p className="text-lg md:text-xl xl:text-2xl text-gray-600">
-            Tailored yoga therapy services designed for holistic wellness.
-          </p>
           <Button
             as="a"
             href="/contact"
-            className="Button"  // Replace with your actual global button class
+            className="Button"
+            style={{ maxWidth: "679px"}}
           >
-            Get in Touch
+            Contact Me
           </Button>
         </motion.div>
 
@@ -49,7 +81,8 @@ export default function Services() {
                   src={lisapose1}
                   alt="Private Yoga Therapy Sessions"
                   className="object-cover w-full h-full"
-                  quality={30}
+                  quality={10}
+                  onLoadingComplete={() => setIsImageLoaded(true)}
                 />
               </div>
             </div>
@@ -77,7 +110,8 @@ export default function Services() {
                   src={neuro}
                   alt="NeuroOptimal® Brain Training Feedback"
                   className="object-cover w-full h-full"
-                  quality={30}
+                  quality={10}
+                  onLoadingComplete={() => setIsImageLoaded(true)}
                 />
               </div>
             </div>
