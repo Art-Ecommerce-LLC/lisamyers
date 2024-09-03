@@ -11,7 +11,13 @@ const Navbar: React.FC = () => {
         <nav className="flex items-center justify-between bg-white p-4 shadow relative z-20">
             <div className="flex items-center z-30">
                 <a href="/">
-                    <Image src={image} alt="Logo" width={190} height={190} />
+                    <Image 
+                    src={image} 
+                    alt="Logo" 
+                    width={190}
+                    style={{height: 'auto'}}
+                    priority={true}
+                    quality={70} />
                 </a>
             </div>
             
