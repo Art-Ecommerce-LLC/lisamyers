@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@headlessui/react";
 import Image from "next/image";
-import contactImage from "../../assets/bliss/lisapose1.jpeg";
 
 export default function Contact() {
 
@@ -40,13 +39,14 @@ export default function Contact() {
         >
           <div className="w-full">
             <Image
-              src={contactImage}
+              src="https://d1izb07g2ul2j2.cloudfront.net/bliss/lisapose1.jpeg"
               alt="Contact Us"
               className="rounded-[100px_20px_50px_20px] lg:rounded-[150px_20px_100px_20px] shadow-lg h-full w-full"
               priority={true}
               blurDataURL="data:..."
               placeholder="blur"
-              height={600}
+              height={900}
+              width={900}
             />
           </div>
         </motion.div>

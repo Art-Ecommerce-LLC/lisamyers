@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import yogaImage2 from "../../assets/bliss/lisapose3.jpeg";
-import yogaImage4 from "../../assets/bliss/lisapose2.jpeg";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
@@ -49,11 +47,12 @@ export default function About() {
           >
             <div className="w-full relative shadow-lg overflow-hidden rounded-[20px_100px_20px_150px] lg:rounded-[150px_20px_100px_20px] aspect-w-4 aspect-h-3">
               <Image
-                src={yogaImage4}
+                src="https://d1izb07g2ul2j2.cloudfront.net/bliss/lisapose2.jpeg"
                 priority={true}
                 alt="Yoga Session"
                 className="w-full h-full object-cover"
-                height={300}
+                height={900}
+                width={900}
                 blurDataURL="data:..."
                 placeholder="blur"
               />
@@ -92,11 +91,12 @@ export default function About() {
           >
             <div className="w-full relative shadow-lg overflow-hidden rounded-[20px_100px_20px_150px] lg:rounded-[150px_20px_100px_20px] aspect-w-4 aspect-h-3">
               <Image
-                src={yogaImage2}
+                src="https://d1izb07g2ul2j2.cloudfront.net/bliss/lisapose3.jpeg"
                 priority={true}
                 alt="Meditation or Healing"
                 className="w-full h-full object-cover"
-                height = {600}
+                height = {900}
+                width={900}
                 blurDataURL="data:..."
                 placeholder="blur"
               />

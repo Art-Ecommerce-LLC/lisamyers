@@ -1,9 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import lisapose1 from "../../assets/bliss/lisapose7.jpeg";
-import neuro from "../../assets/neurooptimal.jpg";
-import Link from "next/link";
 
 export default function Services() {
   return (
@@ -39,11 +36,11 @@ export default function Services() {
             whileTap={{ scale: 0.95 }}
           >
             <Image
-              src={lisapose1}
+              src="https://d1izb07g2ul2j2.cloudfront.net/bliss/lisapose7.jpeg"
               alt="Private Yoga Therapy Sessions"
               className="object-cover w-full h-[320px] align-middle flex items-center justify-center mr-auto ml-auto"
-              height={500}
-              width={500}
+              height={900}
+              width={900}
               priority={true}
               blurDataURL="data:..."
               placeholder="blur"
@@ -70,7 +67,7 @@ export default function Services() {
             whileTap={{ scale: 0.95 }}
           >
             <Image
-              src={neuro}
+              src="https://d1izb07g2ul2j2.cloudfront.net/neurooptimal.jpg"
               alt="NeuroOptimal Brain Training"
               className="object-cover w-[320px] h-[320px] align-middle flex items-center justify-center mr-auto ml-auto" 
               height={300}

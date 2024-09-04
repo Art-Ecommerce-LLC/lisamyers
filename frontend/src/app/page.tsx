@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@headlessui/react";
-import yogaImage from "../assets/bliss/lisapose6.jpeg";
 
 export default function Home() {
 
@@ -41,14 +40,14 @@ export default function Home() {
         >
           <div className="w-full">
             <Image
-              src={yogaImage}
+              src="https://d1izb07g2ul2j2.cloudfront.net/bliss/lisapose6.jpeg"
               alt="Yoga Therapy"
               className="rounded-[100px_20px_50px_20px] lg:rounded-[150px_20px_100px_20px] shadow-lg w-full h-auto"
               priority = {true}
               blurDataURL="data:..."
               placeholder="blur"
-              height={700}
-              
+              height={900}
+              width={900}
             />
           </div>
         </motion.div>
