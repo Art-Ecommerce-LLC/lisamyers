@@ -58,11 +58,11 @@ export default function Home() {
         <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-gray-800 text-center mb-2">
           About Me
         </h2>
-        <h3 className="text-2xl md:text-3xl xl:text-4xl font-semibold text-gray-700 text-center mb-2">
+        <h3 className="text-2xl md:text-3xl xl:text-4xl font-semibold text-gray-700 text-center">
           C-IAYT Certified Yoga Therapist, E-RYT 500
         </h3>
         <h3 className="text-2xl md:text-3xl xl:text-3xl font-semibold text-gray-700 text-center mb-8">
-          Integrative Nutrition Health Coach
+          Holistic Health Coach
         </h3>
         <div className="max-w-4xl mx-auto text-left">
           <p className="text-lg md:text-xl xl:text-2xl text-gray-600 mt-4">
