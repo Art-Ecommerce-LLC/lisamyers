@@ -113,7 +113,7 @@ export default function Services() {
                 Stay Tuned
               </h3>
               <p className="text-gray-600 mt-2">
-                We are always working to bring new offerings to our service
+                Lisa is always working to bring new offerings to our service
                 list. Stay tuned for updates!
               </p>
               {/* <p className="mt-4 text-blue-500 font-semibold hover:underline">
