@@ -75,7 +75,7 @@ export default function About() {
               The Path to Bliss
             </h2>
             <p className="text-lg md:text-xl text-gray-600">
-              Bliss is not created; it is within you, waiting to be uncovered. Our yoga therapy helps remove layers of programming and distractions, revealing your true bliss.
+              Bliss is not created; it is within you, waiting to be uncovered. With Lisa's guidance one can bgin to remove layers of programming and distractions, revealing your true bliss.
             </p>
             <ul className="list-disc list-inside space-y-4 text-left text-lg md:text-xl text-gray-600">
               <li>Radical Self-Care: Establish a solid foundation for your well-being.</li>

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@headlessui/react";
 import Image from "next/image";
-import contactImage from "../../assets/yogacontact.jpg";
+import contactImage from "../../assets/bliss/lisapose1.jpeg";
 
 export default function Contact() {
 
@@ -17,7 +17,7 @@ export default function Contact() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-gray-800 leading-tight">
+          <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-gray-800 leading-tight text-center">
             Get in Touch
           </h1>
           <p className="text-lg text-left md:text-xl xl:text-2xl text-gray-600">
@@ -25,7 +25,7 @@ export default function Contact() {
           </p>
           <Button
             as="a"
-            href="mailto:lisaxmyers@gmail.com?subject=Inquiry%20about%20Yoga%20Therapy"
+            href="mailto:lisa@blissmember.com?subject=Inquiry%20about%20Yoga%20Therapy"
             className="Button"
           >
             Contact Me
