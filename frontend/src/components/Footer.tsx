@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
                         </li>
                     </ul>
                 </nav>
-                <p className="text-gray-500">&copy; Blissmember 2024</p>
+                <p className="text-gray-500">&copy; 2024 Art Ecommerce, LLC. All Rights Reserved.</p>
             </div>
         </footer>
     );

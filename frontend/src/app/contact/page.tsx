@@ -21,7 +21,7 @@ export default function Contact() {
             Get in Touch
           </h1>
           <p className="text-lg text-left md:text-xl xl:text-2xl text-gray-600">
-            Lisa would love to hear from you. Whether you have a question about our services or want to schedule a session, our team is here to help.
+            I would love to hear from you regarding how I can be of service. Contact me for questions or to schedule a session.
           </p>
           <Button
             as="a"

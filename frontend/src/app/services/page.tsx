@@ -53,8 +53,7 @@ export default function Services() {
                 Private Yoga Therapy
               </h3>
               <p className="text-gray-600 mt-2">
-                Tailored sessions that focus on your individual needs, guiding
-                you toward a state of balance and well-being.
+                Yoga therapy extends beyond the scrope of conventional western medicine, offering relief for many ailments we face today. These sessions are tailored to your individual needs, guiding you toward a state of balance and well-being. 
               </p>
               {/* <p className="mt-4 text-blue-500 font-semibold hover:underline">
                 <Link href="/services/yoga-therapy" className="text-blue-500 font-semibold hover:underline inline-block">
@@ -86,8 +85,7 @@ export default function Services() {
                 NeuroOptimal® Brain Neurofeedback
               </h3>
               <p className="text-gray-600 mt-2">
-                Optimize your brain function with non-invasive
-                NeuroOptimal® sessions designed for success.
+                Enhance your mental clarity and emotional balance with Neurofeedback. This will help you rewire your brain for optimal performance, improving focus, relaxation, and overall mental health
               </p>
               {/* <p className="mt-4 text-blue-500 font-semibold hover:underline">
                 <Link href="/services/neurofeedback" className="text-blue-500 font-semibold hover:underline inline-block">

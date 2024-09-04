@@ -26,7 +26,7 @@ export default function Home() {
           </p>
           <Button
             as="a"
-            href="mailto:lisaxmyers@gmail.com?subject=Book%20a%20Yoga%20Session&body=I%20would%20like%20to%20book%20a%20yoga%20session."
+            href="mailto:lisa@blissmember.com?subject=Book%20a%20Yoga%20Session&body=I%20would%20like%20to%20book%20a%20yoga%20session."
             className="Button"
           >
             Contact Me
