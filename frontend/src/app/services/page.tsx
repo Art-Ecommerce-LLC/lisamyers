@@ -53,7 +53,7 @@ export default function Services() {
                 Private Yoga Therapy
               </h3>
               <p className="text-gray-600 mt-2">
-                Yoga therapy extends beyond the scrope of conventional western medicine, offering relief for many ailments we face today. These sessions are tailored to your individual needs, guiding you toward a state of balance and well-being. 
+                Yoga therapy extends beyond the scope of conventional western medicine, offering relief for many ailments we face today. These sessions are tailored to your individual needs, guiding you toward a state of balance and well-being. 
               </p>
               {/* <p className="mt-4 text-blue-500 font-semibold hover:underline">
                 <Link href="/services/yoga-therapy" className="text-blue-500 font-semibold hover:underline inline-block">
