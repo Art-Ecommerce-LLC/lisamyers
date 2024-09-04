@@ -29,7 +29,7 @@ export default function About() {
               Private Yoga Healing Sessions
             </h2>
             <p className="text-lg md:text-xl text-gray-600">
-              Experience personalized healing through Private Yoga Healing Sessions. Tailored to meet your individual needs, these sessions offer a holistic approach to healing, whether for physical discomfort, emotional challenges, or deeper self-connection.
+              Experience personalized healing through Private Yoga Therapy Sessions, designed to meet your individual needs and guide you toward a state of balance and well-being. Whether you’re seeking relief from physical discomfort, emotional challenges, or simply looking to deepen your connection with yourself, these sessions offer a holistic approach to healing.
             </p>
             <p className="text-lg md:text-xl text-gray-600">
               <strong>What to Expect:</strong> Your session will be uniquely tailored and may include:
