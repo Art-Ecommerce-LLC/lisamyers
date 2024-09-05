@@ -47,6 +47,7 @@ export default function Contact() {
               placeholder="blur"
               height={900}
               width={900}
+              sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 900px"
             />
           </div>
         </motion.div>
