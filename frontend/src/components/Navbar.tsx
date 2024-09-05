@@ -14,6 +14,7 @@ const Navbar: React.FC = () => {
                     src={`/headerlogo.webp`} 
                     alt="Logo" 
                     width={190}
+                    height={190}
                     style={{height: 'auto'}}
                     priority={true}
                     quality={70} />
