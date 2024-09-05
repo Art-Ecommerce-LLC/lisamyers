@@ -48,7 +48,7 @@ export default function Home() {
               placeholder="blur"
               height={900}
               width={900}
-              sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 900px"
+              sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
         </motion.div>
