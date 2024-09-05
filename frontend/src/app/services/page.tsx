@@ -2,9 +2,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-import lisapose7 from "../../assets/bliss/lisapose7.jpeg";
-import neurooptimal from "../../assets/neurooptimal.jpg";
-
 export default function Services() {
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-gray-50">
@@ -39,8 +36,7 @@ export default function Services() {
             whileTap={{ scale: 0.95 }}
           >
             <Image
-              // src="https://d1izb07g2ul2j2.cloudfront.net/bliss/lisapose7.jpeg"
-              src = {lisapose7}
+              src = {`/lisapose7.jpeg`}
               alt="Private Yoga Therapy Sessions"
               className="object-cover w-full h-[320px] align-middle flex items-center justify-center mr-auto ml-auto"
               height={900}
@@ -72,8 +68,7 @@ export default function Services() {
             whileTap={{ scale: 0.95 }}
           >
             <Image
-              // src="https://d1izb07g2ul2j2.cloudfront.net/neurooptimal.jpg"
-              src = {neurooptimal}
+              src = {`/neurooptimal.jpg`}
               alt="NeuroOptimal Brain Training"
               className="object-cover w-[320px] h-[320px] align-middle flex items-center justify-center mr-auto ml-auto" 
               height={300}
