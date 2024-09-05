@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
             <div className="flex items-center z-30">
                 <a href="/">
                     <Image 
-                    src={`/headerlogo.jpg`} 
+                    src={`/headerlogo.webp`} 
                     alt="Logo" 
                     width={190}
                     style={{height: 'auto'}}

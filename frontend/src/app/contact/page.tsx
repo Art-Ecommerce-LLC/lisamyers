@@ -37,7 +37,7 @@ export default function Contact() {
         >
           <div className="w-full">
             <Image
-              src={`/lisapose1.jpeg`}
+              src={`/lisapose1.webp`}
               alt="Contact Us"
               className="rounded-[100px_20px_50px_20px] lg:rounded-[150px_20px_100px_20px] shadow-lg h-full w-full"
               priority={true}

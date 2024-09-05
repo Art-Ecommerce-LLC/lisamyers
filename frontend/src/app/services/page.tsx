@@ -36,7 +36,7 @@ export default function Services() {
             whileTap={{ scale: 0.95 }}
           >
             <Image
-              src = {`/lisapose7.jpeg`}
+              src = {`/lisapose7.webp`}
               alt="Private Yoga Therapy Sessions"
               className="object-cover w-full h-[320px] align-middle flex items-center justify-center mr-auto ml-auto"
               height={900}
@@ -68,7 +68,7 @@ export default function Services() {
             whileTap={{ scale: 0.95 }}
           >
             <Image
-              src = {`/neurooptimal.jpg`}
+              src = {`/neurooptimal.webp`}
               alt="NeuroOptimal Brain Training"
               className="object-cover w-[320px] h-[320px] align-middle flex items-center justify-center mr-auto ml-auto" 
               height={300}

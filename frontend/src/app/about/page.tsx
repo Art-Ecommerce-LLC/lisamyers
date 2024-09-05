@@ -47,7 +47,7 @@ export default function About() {
           >
             <div className="w-full relative shadow-lg overflow-hidden rounded-[20px_100px_20px_150px] lg:rounded-[150px_20px_100px_20px] aspect-w-4 aspect-h-3">
               <Image
-                src = {`/lisapose2.jpeg`}
+                src = {`/lisapose2.webp`}
                 priority={true}
                 alt="Yoga Session"
                 className="w-full h-full object-cover"
@@ -92,7 +92,7 @@ export default function About() {
           >
             <div className="w-full relative shadow-lg overflow-hidden rounded-[20px_100px_20px_150px] lg:rounded-[150px_20px_100px_20px] aspect-w-4 aspect-h-3">
               <Image
-                src = {`/lisapose3.jpeg`}
+                src = {`/lisapose3.webp`}
                 priority={true}
                 alt="Meditation or Healing"
                 className="w-full h-full object-cover"
