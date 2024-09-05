@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+
 import image from '../assets/headerlogo.jpg';
 
 const Navbar: React.FC = () => {

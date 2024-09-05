@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { Button } from "@headlessui/react";
 import Image from "next/image";
 
+import lisapose1 from "../../assets/bliss/lisapose1.jpeg";
+
 export default function Contact() {
-
-
   return (
     <div className="w-full h-full flex items-center justify-center">
       <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-8xl p-8 md:p-16 lg:space-x-16">
@@ -39,7 +39,8 @@ export default function Contact() {
         >
           <div className="w-full">
             <Image
-              src="https://d1izb07g2ul2j2.cloudfront.net/bliss/lisapose1.jpeg"
+              // src="https://d1izb07g2ul2j2.cloudfront.net/bliss/lisapose1.jpeg"
+              src={lisapose1}
               alt="Contact Us"
               className="rounded-[100px_20px_50px_20px] lg:rounded-[150px_20px_100px_20px] shadow-lg h-full w-full"
               priority={true}
